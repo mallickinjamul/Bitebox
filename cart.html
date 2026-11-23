@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="assets/images/bitebox banner.jpg" alt="banner" width="100" height="100">
+        <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section id="cart-hero">
+        <h1>Your cart items</h1>
+        <p>Review your food food items while proceeding</p>
+        <hr>
+        <p>update or remove quantaties and proceed</p>
+    </section>
+    <section id="cart-details">
+        <table border="1" id="shopping-cart">
+            <thead>
+                <tr>
+                    <th>item</th>
+                    <th>price</th>
+                    <th>Quantity</th>
+                    <th>total</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <section id="payment-method">
+        <h3>payment methods</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGEiWhHOUTqW09dQgOo5NI74h2aWodMdm69rYk3zZjA&s=10" alt="visa" width="60"><span><input type="radio" name="p"> 
+<label for="card">visa</label><br></span><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1gJxt4dUqgRHfsXp4roaanPXX_nCwDsVAEUofbxfRKw&s=10" alt="upi" width="60"><span><input type="radio" name="p"> 
+<label for="card">upi</label><br></span><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LSk0WGveij8bimTeDTDRxRbVSTv4eLJW52iCsqQMyQ&s=10" alt="credit card"  width="60"><span><input type="radio" name="p"> 
+<label for="card">card</label><br></span><br>
+    </section>
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <p><span>Subtotal(<span id="item-count">0</span>Items) </span>
+                 <span id="subtotal">Rs 0.00</span></p>
+            <p><span>Delivery charges</span>
+                 <span id="delivery amount">Free</span></p>
+           <span>Rs 0.00</span></p>
+            <h3><span>Total Amount</span>
+                 <span id="total amount">Rs 0.00</span></h3>
+            <button>Proceed to Checkout</button>
+            <p><img src="https://cdn-icons-png.flaticon.com/512/6993/6993594.png" alt="Secure" width="18">Secure Payment</p>
+        </section>
+        <section cart-actions>
+            <a href="menu.html">
+                <img src="https://png.pngtree.com/png-clipart/20230112/original/pngtree-transparent-blue-arrow-pointing-left-png-image_8906313.png" alt="left arrow" width="20">
+                continue shopping
+            </a>
+            <button>
+                <img src="https://cdn-icons-png.flaticon.com/512/1345/1345874.png" alt="delete" width="10">
+                Delete cart
+            </button>
+            <hr>
+         </section>
+<footer>
+    <a href="#home">Home</a>
+    <a href="speciallities">Menu</a>
+    <a href="#contact">contact</a>
+    <p>
+     2026 All rights reserved.
+    </p>
+    <a href="#header">Back to top</a>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

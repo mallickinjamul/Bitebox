@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to bitebox</h1>
+
+    <h1 id="title">Hello Students</h1>
+
+    <p class="message">first</p>
+    <p class="message">second</p>
+    <p class="message">third</p>
+
+    <div id="box">Hello</div>
+
+    <input type="text" id="username" value="HTML">
+
+    <br>
+    <button onclick="showMessage()" >Click Me</button>
+
+    <br>
+    <br>
+
+    <button id="mybutton">Click here</button>
+    <h2>My shopping cart </h2>
+
+   <button onclick="addFood()">AddPizza</button>
+   <p id="cart"></p>
+
+   <script>
+  function addFood() {
+
+    localStorage.setItem("food", "Pizza");
+
+    displayFood();
+}
+
+
+function displayFood() {
+
+    let savedFood = localStorage.getItem("food");
+
+    document.getElementById("cart").textContent = savedFood;
+}
+
+
+// Automatically display saved food when page loads
+displayFood();
+   </script>
+
+
+<button onclick="changeMode()">Dark/Light</button>
+
+<style>
+    body{
+        background-color: white;
+        color: black;
+    }
+
+    .dark{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+
+    <script src="js/script1.js"></script>
+</body>
+</html>
